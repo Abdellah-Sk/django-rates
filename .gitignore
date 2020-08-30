@@ -2,3 +2,4 @@
 .idea/
 src/Dashboard/__pycache__/
 src/stats/__pycache__/
+src/stats/migrations/__pycache__/
