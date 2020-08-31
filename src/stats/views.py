@@ -1,5 +1,10 @@
 from django.shortcuts import render, HttpResponse
 
+import api
+
 # Create your views here.
 def dashboard(request):
-    return render(request, "stats/index.html", context={"liste_nombre": range(15)})
+    days, rates = api.get_rates(curriences=["USD"], days=30)
+
+    return render(request, "stats/index.html", context={"data": rates["USD"],
+                                                        "days_labels": days})
