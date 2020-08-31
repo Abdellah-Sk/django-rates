@@ -3,3 +3,4 @@
 src/Dashboard/__pycache__/
 src/stats/__pycache__/
 src/stats/migrations/__pycache__/
+src/__pycache__/
