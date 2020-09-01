@@ -19,6 +19,6 @@ from django.urls import path
 from stats.views import dashboard
 
 urlpatterns = [
-    path('days=<int:days_range>/currencies=<str:currencies>', dashboard),
+    path('days=<int:days_range>&currencies=<str:currencies>', dashboard),
     path('admin/', admin.site.urls),
 ]
