@@ -12,6 +12,9 @@
         <div class="row">
             <div class="col">
                 <h1 class="text-white">Tableau de bord - {{ page_label }}</h1>
+                <a href="{% url 'home' days_range=7 currencies=currencies %}" class="btn btn-secondary">Semaine</a>
+                <a href="{% url 'home' days_range=30 currencies=currencies %}" class="btn btn-secondary">Mois</a>
+                <a href="{% url 'home' days_range=365 currencies=currencies %}" class="btn btn-secondary">Année</a>
             </div>
         </div>
 

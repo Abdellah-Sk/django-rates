@@ -10,4 +10,5 @@ def dashboard(request, days_range=60, currencies="CAD"):
 
     return render(request, "stats/index.html", context={"data": rates,
                                                         "days_labels": days,
+                                                        "currencies": currencies,
                                                         "page_label": page_label})
