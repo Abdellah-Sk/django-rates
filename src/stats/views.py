@@ -1,8 +1,10 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
 
 import api
 
-# Create your views here.
+def redirect_index(request):
+    return redirect("home", days_range=30, currencies="USD")
+
 def dashboard(request, days_range=60, currencies="CAD"):
 
     days, rates = api.get_rates(curriences=currencies.split(","), days=days_range)
