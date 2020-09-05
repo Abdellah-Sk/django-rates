@@ -3,5 +3,6 @@
 src/Dashboard/__pycache__/
 src/stats/__pycache__/
 src/stats/migrations/__pycache__/
+src/stats/__pycache__/views.cpython-38.pyc
 src/__pycache__/
 src.zip
